@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Club Deportivo DWEC</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-center">
+      <h4>FORMULARIO SOCIOS CLUB DEPORTIVO DWEC</h4>
+    </div>
+  </nav>
+  <div class="container">
+    <form class="form-style">
+      <h3>datos  usuario</h3>
+      <ul>
+        <li>
+          <input type="text" name="nombre" class="field-style field-split align-left texto" placeholder="Nombre" />
+          <input type="text" name="apellido" class="field-style field-split align-right texto"
+            placeholder="Apellidos" />
+          <input type="text" name="fecha" class="field-style field-split align-left texto"
+            placeholder="Fecha nacimiento  aaaa/mm/dd" />
+          <input type="text" name="altura" class="field-style field-split align-right texto" placeholder="Altura(cm)" />
+          <input type="text" name="peso" class="field-style field-split align-left texto" placeholder="Peso(kg)" />
+          <input type="text" name="url" class="field-style field-split align-right texto" placeholder="URL personal" />
+          <input type="text" name="deportes" class="field-style field-full align-right texto"
+            placeholder="Deportes separados por coma..." />
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <input type="button" class="field-style field-full btn btn-hero" value="Crear Usuario"
+            onclick="crearUsuario()" />
+        </li>
+      </ul>
+      <ul id="botonesUsuario" class="oculto">
+        <li>
+          <input type="button" class="field-style field-split align-left btn btn-hero" value="Saludar"
+            onclick="saludar()" />
+          <input type="button" class="field-style field-split align-right btn btn-hero" value="Estadísticas"
+            onclick="mostrarEstadisticas()" />
+        </li>
+        <li>
+          <input type="button" class="field-style field-full btn btn-hero" value="Abrir URL" onclick="abrirUrl()" />
+        </li>
+      </ul>
+      <div id="datosFormulario1"></div>
+    </form>
+  </div>
+  <div class="container">
+    <form class="form-style">
+      <ul>
+        <li>
+          <input type="button" value="Comprobar Deportes" class="field-style field-full btn btn-hero"
+            onclick="comprobarDeportes()" />
+        </li>
+      </ul>
+      <div id="datosFormulario2"></div>
+      <ul id="botonesArray" class="oculto">
+        <li>
+          <input type="button" class="field-style field-full btn btn-hero" value="Sugerir Deportes"
+            onclick="deportesNuevos()" />
+        </li>
+      </ul>
+      <div id="datosFormulario3"></div>
+    </form>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
