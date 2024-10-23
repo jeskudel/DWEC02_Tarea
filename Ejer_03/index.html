@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca DWEC</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <h4>WEB DE REGISTRO DEL VIDEOCLUB DWEC</h4>
+        </div>
+    </nav>
+    <div class="container">
+        <form name="informacion" class="form-style" action="">
+            <section>
+                <h3 for="titulo">Titulo</h3>
+                <input type="text" class="texto field-style" name="titulo" id="titulo">
+            </section>
+            <section>
+                <h3 for="año">Año</h3>
+                <input type="text" class="texto field-style" name="año" id="año">
+            </section>
+            <section>
+                <h3 for="director">Director</h3>
+                <input type="text" class="texto field-style" field-style name="director" id="director">
+            </section>
+            <section>
+                <h3 for="casting">Casting</h3>
+                <input type="text" class="texto field-style" name="casting" id="casting">
+            </section>
+            <section class="botones">
+                <input type="button" class="field-style field-full  btn btn-hero" value="Agregar Pelicula"
+                    onclick="agregarPelicula()">
+                <input type="button" class="field-style field-full  btn btn-hero" value="Borrar Pelicula"
+                    onclick="borrarPelicula()">
+                <input type="button" class="field-style field-split align-left btn btn-hero"
+                    value="Visualizar Peliculas" onclick="mostrarPeliculas()">
+                <input type="button" class="field-style field-split align-left btn btn-hero" value="Filtrar Peliculas"
+                    onclick="filtrarPeliculas()">
+            </section>
+        </form>
+        <form name="resultados" class="form-style" action="">
+            <div id="datos"></div>
+        </form>
+    </div>
+    
+</body>
+
+</html>
