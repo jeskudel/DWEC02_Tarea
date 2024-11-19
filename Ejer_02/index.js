@@ -1,5 +1,5 @@
-deportesClub=["snooker", "tenis", "balonmano", "baloncesto", "futbol", "waterpolo", "MTB"]
-deportesNuevos=["minigolf", "dardos", "eskoba","trinkete","beisbol","curling","ajedrez"]
+deportesClubArray=["snooker", "tenis", "balonmano", "baloncesto", "futbol", "waterpolo", "MTB"]
+deportesNuevosArray=["minigolf", "dardos", "eskoba","trinkete","beisbol","curling","ajedrez"]
 
 function crearUsuario(){
     //no borrar estas líneas, hace que aparezcan los botones necesarios para el ejercicio
